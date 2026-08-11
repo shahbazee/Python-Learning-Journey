@@ -1,10 +1,24 @@
 import re
 
-text = "My email is shahbaz123@gmail.com"
+#Problem 1
+text = "Python is powerful"
 
-pattern = r"\S+@\S+"
+result = re.match(r"Python", text)
 
-match = re.search(pattern, text)
+print(result.group())
 
-if match:
-    print("Email:", match.group())
+
+#Problem 2
+text = "Python is easy. Python is powerful."
+
+result = re.findall("Python", text)
+
+print(result)
+
+
+#Problem 3
+text = "I am learning Python"
+
+result = re.search("Python", text)
+
+print(result.group())

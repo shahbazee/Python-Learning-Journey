@@ -1,19 +1,35 @@
-from collections import Counter, deque
+# Problem 1
+from collections import Counter
 
-text = ["apple", "banana", "apple", "orange", "banana"]
+text = "python programming"
 
 counter = Counter(text)
 
 print(counter)
 
-queue = deque()
 
-queue.append("Ali")
-queue.append("Sara")
-queue.append("Ahmed")
+#Problem 2
+from collections import Counter
 
-print(queue)
+words = ["python", "sql", "python", "java", "sql", "python"]
 
-queue.popleft()
+counter = Counter(words)
 
-print(queue)
+print(counter)
+print(counter.most_common(1))
+
+#Problem 3
+
+from collections import Counter
+
+store1 = ["apple", "banana", "apple", "orange"]
+store2 = ["apple", "banana", "banana", "mango"]
+
+counter1 = Counter(store1)
+counter2 = Counter(store2)
+
+if counter1 == counter2:
+    print("They are equal")
+else:
+    print("They are not equal")
+
