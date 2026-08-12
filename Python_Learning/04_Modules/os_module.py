@@ -1,15 +1,18 @@
 import os
 
-print("Current Working Directory:")
+# Current directory
 print(os.getcwd())
 
-print("\nFiles in Current Directory:")
+# Files/folders list
 print(os.listdir())
 
-folder = "demo_folder"
+# Create folder
+if not os.path.exists("data"):
+    os.mkdir("data")
 
-if not os.path.exists(folder):
-    os.mkdir(folder)
-    print(f"{folder} created.")
+# Create file path
+file_path = os.path.join("data", "user.json")
+print(file_path)
 
-print("Operating System:", os.name)
+# Check if file exists
+print(os.path.exists(file_path))
