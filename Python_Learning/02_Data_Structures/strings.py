@@ -40,3 +40,14 @@ print("  Hello  ".strip())
 
 # count()
 print(text.count("m"))
+
+# Palindrome Check Problem
+
+text = "madam"
+
+reverse = text[::-1]
+
+if text == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
